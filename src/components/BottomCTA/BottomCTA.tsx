@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Icon from "@/components/Icon/Icon";
-import { CTA_CHIPS } from "@/data/trust";
+import { BOTTOM_CTA_FEATURES } from "@/data/featurePairs";
 import styles from "./BottomCTA.module.css";
 
 export default function BottomCTA() {
@@ -29,14 +29,18 @@ export default function BottomCTA() {
         </h2>
         <p className={styles.desc}>
           Attend a secure online consultation with an experienced Illinois
-          medical cannabis physician. Same-day appointments available — no
-          in-person visits required, 100% online process.
+          medical cannabis physician.
         </p>
-        <div className={styles.chips}>
-          {CTA_CHIPS.map((chip) => (
-            <div key={chip.label} className={styles.chip}>
-              <Icon name={chip.icon} size={16} strokeWidth={2.5} />
-              {chip.label}
+        <div className={styles.features}>
+          {BOTTOM_CTA_FEATURES.map((feature) => (
+            <div key={feature.title} className={styles.featureCard}>
+              <div className={styles.iconWrap}>
+                <Icon name={feature.icon} size={22} strokeWidth={2.5} />
+              </div>
+              <div className={styles.featureText}>
+                <h3>{feature.title}</h3>
+                <p>{feature.subtitle}</p>
+              </div>
             </div>
           ))}
         </div>

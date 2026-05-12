@@ -18,7 +18,7 @@ export default function Benefits() {
                 Medical Marijuana Card
               </span>
             }
-            description="With a valid Illinois medical marijuana card, patients access regulated medical cannabis through state-licensed dispensaries under the Illinois Medical Cannabis Patient Program."
+            description="With a valid Illinois medical marijuana card, patients can access medical cannabis through state-licensed dispensaries under the Illinois Medical Cannabis Patient Program. The program ensures regulated access, physician oversight, and legal protection for qualifying patients."
           />
         </Reveal>
         <div className={styles.grid}>

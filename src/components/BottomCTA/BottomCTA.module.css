@@ -55,28 +55,58 @@
   font-size: clamp(0.88rem, 1.3vw, 1rem);
 }
 
-.chips {
-  display: flex;
-  justify-content: center;
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  flex-wrap: wrap;
-  margin-bottom: 3rem;
+  margin: 0 auto 3rem;
+  max-width: 880px;
 }
 
-.chip {
+.featureCard {
   display: flex;
   align-items: center;
-  gap: 8px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.65);
-  padding: 9px 18px;
-  border-radius: 50px;
-  font-size: 0.82rem;
+  gap: 14px;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(82, 183, 136, 0.18);
+  border-radius: 18px;
+  padding: 16px 18px;
+  transition: background 0.3s, border-color 0.3s;
 }
 
-.chip svg {
-  color: #52b788;
+.featureCard:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(82, 183, 136, 0.3);
+}
+
+.iconWrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #52b788, #2d7a52);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  flex-shrink: 0;
+  box-shadow: 0 4px 14px rgba(82, 183, 136, 0.35);
+}
+
+.featureText h3 {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: clamp(0.92rem, 1.4vw, 1.02rem);
+  color: #ffffff;
+  margin-bottom: 0.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.featureText p {
+  font-size: clamp(0.74rem, 1.1vw, 0.8rem);
+  color: rgba(255, 255, 255, 0.55);
+  margin: 0;
+  line-height: 1.5;
 }
 
 .btn {
@@ -103,13 +133,18 @@
   .section {
     padding: 70px 5%;
   }
-  .chips {
-    gap: 0.6rem;
+  .features {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
     margin-bottom: 2.5rem;
   }
-  .chip {
-    font-size: 0.76rem;
-    padding: 7px 14px;
+  .featureCard {
+    padding: 14px;
+  }
+  .iconWrap {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
   }
   .btn {
     padding: 16px 30px;

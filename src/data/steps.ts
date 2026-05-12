@@ -13,7 +13,7 @@ export const STEPS: Step[] = [
   },
   {
     icon: "calendar",
-    title: "Schedule Appointment",
+    title: "Schedule Your Appointment",
     description:
       "Choose a convenient time to speak with our licensed medical cannabis doctor for your health evaluation.",
   },
@@ -21,12 +21,12 @@ export const STEPS: Step[] = [
     icon: "video",
     title: "Attend MMJ Evaluation",
     description:
-      "Consult with a licensed Illinois MMJ doctor via secure video or audio to review your medical history and determine eligibility.",
+      "Consult with a licensed Illinois MMJ doctor through a secure video or audio consultation to review your medical history and determine eligibility based on qualifying conditions.",
   },
   {
     icon: "shield-check",
     title: "State Registration",
     description:
-      "Use your physician certification to apply through the Illinois Medical Cannabis Patient Program and pay the state fee of $50–$125.",
+      "If approved, use your physician certification to apply through the Illinois Medical Cannabis Patient Program, pay the state fee of $50–$125 depending on card duration, and complete your medical cannabis card in Illinois application.",
   },
 ];

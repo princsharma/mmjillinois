@@ -79,14 +79,15 @@ export default function Doctors() {
             cannabis evaluations to help patients obtain an Illinois medical
             marijuana card, ensuring every patient receives personalized
             attention and comprehensive guidance throughout the application
-            process.
+            process. Each doctor is fully licensed in Illinois and stays up to
+            date with the latest state regulations.
           </p>
           <p>
-            Each doctor is fully licensed in Illinois and stays up to date with
-            the latest state regulations. We understand that seeking medical
-            cannabis treatment is a significant decision. That&apos;s why our
-            doctors take the time to thoroughly review your medical history,
-            answer all your questions, and provide clear recommendations.
+            We understand that seeking medical cannabis treatment is a
+            significant decision. That&apos;s why our doctors take the time to
+            thoroughly review your medical history, answer all your questions,
+            and provide clear recommendations based on your individual health
+            needs and qualifying conditions.
           </p>
           <div className={styles.badges}>
             {CERT_BADGES.map((badge) => (
@@ -97,7 +98,7 @@ export default function Doctors() {
             ))}
           </div>
           <Link href="#hero-form" className={styles.btn}>
-            Schedule Consultation
+            Start Your Journey Today
             <Icon name="arrow-right" size={18} strokeWidth={2.5} />
           </Link>
         </Reveal>

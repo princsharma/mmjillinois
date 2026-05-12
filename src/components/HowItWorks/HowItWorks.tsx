@@ -35,7 +35,7 @@ export default function HowItWorks() {
                 Medical Marijuana Card Online
               </span>
             }
-            description="Get your medical marijuana evaluation with our licensed physicians before proceeding with state registration through the Illinois Department of Health (IDPH)."
+            description="Get your medical marijuana evaluation with our licensed physicians before proceeding with state registration through the Illinois Department of Health (IDPH), which administers the Illinois medical marijuana program."
           />
         </div>
       </Reveal>
@@ -55,7 +55,7 @@ export default function HowItWorks() {
       </div>
       <div className={styles.cta}>
         <Link href="#hero-form" className={styles.btn}>
-          Consult With an IL MMJ Doctor
+          Consult With a IL MMJ Doctor
           <Icon name="arrow-right" size={18} strokeWidth={2.5} />
         </Link>
       </div>

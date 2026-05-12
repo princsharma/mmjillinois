@@ -27,7 +27,7 @@ export default function Hero() {
             Illinois Licensed Physicians · State Compliant
           </div>
           <h1 className={styles.title} id="hero-title">
-            Get Your <em>Illinois</em>
+            Apply for an <em>Illinois</em>
             <br />
             Medical{" "}
             <span className={styles.underlineText}>Marijuana Card</span>
@@ -35,10 +35,11 @@ export default function Hero() {
             Online Today
           </h1>
           <p className={styles.desc}>
-            Get evaluated by a licensed Illinois MMJ doctor through our secure
-            telehealth platform. Complete your evaluation conveniently from
-            home — fully compliant with the Illinois Medical Cannabis Patient
-            Program.
+            Get evaluated by a licensed Illinois medical marijuana doctor
+            through our secure telehealth platform. Attend your evaluation
+            conveniently from home. Our process is fully compliant with the
+            Illinois Medical Cannabis Patient Program and meets all
+            state-required guidelines for physician certification.
           </p>
           <div className={styles.trustRow}>
             {HERO_TRUST.map((chip) => (

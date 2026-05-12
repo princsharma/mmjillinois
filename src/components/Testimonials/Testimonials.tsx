@@ -14,7 +14,7 @@ export default function Testimonials() {
             title={
               <span id="testimonials-title">Hear from Patients Like You</span>
             }
-            description="See how patients describe their experience — from clear guidance to feeling supported at every step."
+            description="See how patients describe their experience, from clear guidance to feeling supported at every step of the evaluation."
           />
         </Reveal>
         <div className={styles.grid}>

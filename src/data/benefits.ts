@@ -10,7 +10,7 @@ export const BENEFITS: Benefit[] = [
     icon: "tag",
     title: "Lower Taxes on Purchases",
     description:
-      "Medical cannabis in Illinois is taxed at just 1%–2.25% and exempt from 10%–25% excise taxes — significantly more affordable than recreational purchases.",
+      "Medical cannabis in Illinois is taxed at just 1%–2.25% and is exempt from 10%–25% excise taxes, making it significantly more affordable than recreational purchases.",
     tag: "Save More",
   },
   {
@@ -24,14 +24,14 @@ export const BENEFITS: Benefit[] = [
     icon: "store",
     title: "Licensed Dispensaries",
     description:
-      "Purchase lab-tested medical cannabis products from state-licensed dispensaries across all of Illinois.",
+      "Patients can purchase lab-tested medical cannabis products from state-licensed dispensaries across Illinois.",
     tag: "Statewide Access",
   },
   {
     icon: "shield-check",
-    title: "Full Legal Protection",
+    title: "Legal Protection",
     description:
-      "A valid Illinois medical marijuana card allows patients to legally purchase, possess, and use cannabis for approved conditions in full compliance with state law.",
+      "A valid Illinois medical marijuana card allows patients to legally purchase, possess, and use cannabis for approved conditions in compliance with state regulations.",
     tag: "Legally Protected",
   },
 ];

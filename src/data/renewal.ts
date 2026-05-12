@@ -16,15 +16,15 @@ export const RENEWAL_STEPS: RenewalStep[] = [
   {
     num: 2,
     icon: "doc",
-    title: "Update Certification",
+    title: "Update Certification (If Required)",
     description:
-      "If your physician certification has expired, consult with a licensed Illinois MMJ doctor to renew your eligibility.",
+      "If your physician certification has expired, consult with a licensed Illinois medical marijuana doctor to renew your eligibility.",
   },
   {
     num: 3,
     icon: "check",
     title: "Submit Renewal Application",
     description:
-      "Complete your renewal online, pay the state fee ($50–$125), and submit it for approval to keep your card active.",
+      "Complete your renewal application online, pay the state fee ($50–$125), and submit it for approval to keep your card active.",
   },
 ];

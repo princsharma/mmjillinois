@@ -56,7 +56,7 @@ export default function HeroForm() {
         <div>
           <div className={styles.cardTitle}>Get Started Today</div>
           <div className={styles.cardSubtitle}>
-            Start your IL MMJ card application
+            Start your medical marijuana card Illinois application
           </div>
         </div>
       </div>

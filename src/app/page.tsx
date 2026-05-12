@@ -4,6 +4,7 @@ import StatsBar from "@/components/StatsBar/StatsBar";
 import WhyUs from "@/components/WhyUs/WhyUs";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import Doctors from "@/components/Doctors/Doctors";
+import ConnectDoctor from "@/components/ConnectDoctor/ConnectDoctor";
 import Conditions from "@/components/Conditions/Conditions";
 import Benefits from "@/components/Benefits/Benefits";
 import Pricing from "@/components/Pricing/Pricing";
@@ -29,6 +30,7 @@ export default function HomePage() {
         <WhyUs />
         <HowItWorks />
         <Doctors />
+        <ConnectDoctor />
         <Conditions />
         <Benefits />
         <Pricing />

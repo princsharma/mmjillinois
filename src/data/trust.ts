@@ -6,14 +6,13 @@ export type TrustChip = {
 export const HERO_TRUST: TrustChip[] = [
   { icon: "lock", label: "HIPAA-Compliant" },
   { icon: "check", label: "Money-Back Guarantee" },
-  { icon: "user", label: "Licensed IL Doctors" },
+  { icon: "user", label: "Licensed Doctors" },
 ];
 
 export const CERT_BADGES = [
   { icon: "check" as const, label: "Board-Certified" },
   { icon: "lock" as const, label: "HIPAA Compliant" },
   { icon: "scale" as const, label: "100% Legal" },
-  { icon: "calendar" as const, label: "Same-Day Scheduling" },
 ];
 
 export const CTA_CHIPS = [

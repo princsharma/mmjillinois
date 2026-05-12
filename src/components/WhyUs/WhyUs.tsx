@@ -32,7 +32,7 @@ export default function WhyUs() {
                 Medical Marijuana Card, Illinois
               </span>
             }
-            description="Every consultation is conducted by an Illinois MMJ doctor who understands state regulations and provides compassionate, personalized guidance."
+            description="Every consultation is conducted by an Illinois MMJ doctor online who understands state regulations and provides compassionate guidance, helping patients confidently obtain their medical marijuana card in Illinois."
           />
         </Reveal>
       </div>

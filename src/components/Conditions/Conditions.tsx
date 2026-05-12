@@ -43,6 +43,7 @@ export default function Conditions() {
       </Reveal>
 
       <Reveal>
+        <h3 className={styles.subheading}>Approved Conditions Include:</h3>
         <ul className={styles.grid}>
           {CONDITIONS.map((cond) => (
             <li key={cond.name} className={styles.pill}>

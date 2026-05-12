@@ -29,8 +29,10 @@ export default function Pricing() {
           <SectionHeader
             variant="dark"
             tag="Transparent Pricing"
-            title={<span id="pricing-title">Pricing You Can Trust</span>}
-            description="Transparency comes first. Get a clear view of your evaluation cost before you start."
+            title={
+              <span id="pricing-title">Transparent Pricing You Can Trust</span>
+            }
+            description="Transparency comes first. Get a clear view of your evaluation cost before you start, so you can proceed with confidence and complete clarity."
           />
         </Reveal>
         <div className={styles.grid}>
@@ -74,8 +76,7 @@ export default function Pricing() {
         </div>
         <p className={styles.note}>
           Note: Illinois state registration fee of $50–$125 is paid separately
-          to the Illinois Medical Cannabis Patient Program. Discounts may be
-          available for eligible patients.
+          to the Illinois Medical Cannabis Patient Program.
         </p>
       </div>
     </section>

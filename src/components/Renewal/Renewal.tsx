@@ -18,7 +18,7 @@ export default function Renewal() {
                 Medical Marijuana Card
               </span>
             }
-            description="Renewing is completed online through the state portal, helping you maintain uninterrupted access to medical cannabis."
+            description="Renewing your Illinois medical marijuana card is completed online through the state portal, helping you maintain uninterrupted access to medical cannabis."
           />
         </Reveal>
         <ol className={styles.grid}>
