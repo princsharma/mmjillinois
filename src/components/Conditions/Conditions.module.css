@@ -1,0 +1,132 @@
+.section {
+  background: var(--cream);
+  position: relative;
+  overflow: hidden;
+  padding: 100px 5%;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  bottom: -200px;
+  left: -200px;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(82, 183, 136, 0.06), transparent);
+  pointer-events: none;
+}
+
+.headerRow {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: end;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.highlight {
+  background: linear-gradient(135deg, #0d2818, #1a4731);
+  border-radius: 20px;
+  padding: 1.8rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.highlightIcon {
+  width: 48px;
+  height: 48px;
+  background: rgba(82, 183, 136, 0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #95d5b2;
+  flex-shrink: 0;
+}
+
+.highlight h4 {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+}
+
+.highlight p {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.6;
+}
+
+.grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.55rem;
+  position: relative;
+}
+
+.pill {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 11px 15px;
+  font-size: clamp(0.76rem, 1.1vw, 0.8rem);
+  color: var(--g2);
+  border: 1.5px solid rgba(82, 183, 136, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: border-color 0.2s, background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.pill:hover {
+  border-color: #52b788;
+  background: rgba(82, 183, 136, 0.04);
+  color: var(--g1);
+  transform: translateX(3px);
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  background: linear-gradient(135deg, rgba(82, 183, 136, 0.15), rgba(149, 213, 178, 0.1));
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #52b788;
+}
+
+@media (max-width: 960px) {
+  .section {
+    padding: 70px 5%;
+  }
+  .headerRow {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  .highlight {
+    padding: 1.4rem;
+  }
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .pill {
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 460px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

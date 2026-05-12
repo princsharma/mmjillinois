@@ -1,0 +1,231 @@
+.wrapper {
+  position: relative;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 2.5rem;
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #52b788, #e9c46a, #52b788);
+  background-size: 200%;
+  animation: shimmer 3s linear infinite;
+  z-index: 1;
+}
+
+.floatingBadge2 {
+  position: absolute;
+  top: -16px;
+  left: -20px;
+  background: linear-gradient(135deg, #e9c46a, #f4a261);
+  border-radius: 14px;
+  padding: 10px 14px;
+  box-shadow: 0 8px 28px rgba(233, 196, 106, 0.4);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #ffffff;
+  animation: bob 4s 1s ease-in-out infinite;
+  z-index: 3;
+  white-space: nowrap;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1.8rem;
+}
+
+.headerIcon {
+  width: 46px;
+  height: 46px;
+  background: linear-gradient(135deg, #52b788, #2d7a52);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.cardTitle {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: 1.35rem;
+  color: var(--g1);
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.cardSubtitle {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.field {
+  margin-bottom: 0.9rem;
+}
+
+.field label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #2d7a52;
+  margin-bottom: 5px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.field input {
+  width: 100%;
+  padding: 13px 16px;
+  border: 1.5px solid #e8f0ec;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: var(--g1);
+  background: #fafdf9;
+  transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.field input:focus {
+  border-color: #52b788;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(82, 183, 136, 0.1);
+}
+
+.field input[aria-invalid="true"] {
+  border-color: #d44a4a;
+  background: #fff5f5;
+}
+
+.checkboxRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-bottom: 0.7rem;
+}
+
+.checkboxRow input {
+  margin-top: 3px;
+  accent-color: #52b788;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.checkboxRow label {
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.checkboxRow a {
+  color: #52b788;
+  text-decoration: underline;
+}
+
+.error {
+  display: block;
+  font-size: 0.75rem;
+  color: #d44a4a;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #52b788, #2d7a52);
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  font-family: inherit;
+  font-size: 0.98rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
+  margin-top: 0.4rem;
+  box-shadow: 0 6px 24px rgba(82, 183, 136, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.submitBtn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 32px rgba(82, 183, 136, 0.45);
+}
+
+.submitBtn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.success {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 1.25rem;
+  border-radius: 14px;
+  background: rgba(82, 183, 136, 0.08);
+  border: 1px solid rgba(82, 183, 136, 0.25);
+  color: var(--g1);
+}
+
+.success strong {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.success p {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+@media (max-width: 540px) {
+  .card {
+    padding: 2rem 1.4rem 1.6rem;
+    border-radius: 22px;
+  }
+  .floatingBadge2 {
+    top: -14px;
+    left: 12px;
+    font-size: 0.72rem;
+    padding: 8px 12px;
+  }
+  .floatingBadge2 svg {
+    width: 14px;
+    height: 14px;
+  }
+  .cardTitle {
+    font-size: 1.15rem;
+  }
+  .cardSubtitle {
+    font-size: 0.74rem;
+  }
+  .field input {
+    padding: 12px 14px;
+  }
+  .submitBtn {
+    padding: 13px;
+    font-size: 0.92rem;
+  }
+}
