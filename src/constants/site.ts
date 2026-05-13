@@ -21,7 +21,7 @@ export const SITE = {
   locale: "en_US",
   state: "IL",
   country: "US",
-  email: "support@medicalmarijuanascardillinois.com",
+  email: "contact@medicalmarijuanacardillinois.com",
   phone: "+1-800-000-0000",
   ogImage: "/opengraph-image.png",
   twitterImage: "/twitter-image.png",
@@ -30,6 +30,24 @@ export const SITE = {
     twitter: "",
     instagram: "",
   },
+} as const;
+
+export const STATE_CONFIG = {
+  stateAbbr: "IL",
+  stateName: "Illinois",
+  city: "Chicago",
+  timezone: "CST",
+} as const;
+
+export const HEALLY = {
+  prefillUrl: "https://mymmj.getheally.com/patient_admin/prefill",
+  utmSource: "medicalmarijuanascardillinois",
+  productName: "Eva",
+} as const;
+
+export const ANALYTICS = {
+  gtmId: "GTM-WVJXV9C7",
+  googleSiteVerification: "eZu_U9cBDCODUZUxeMeTJ5U85daQR0fFnoCzYnR0Kp0",
 } as const;
 
 export const NAV_LINKS = [
