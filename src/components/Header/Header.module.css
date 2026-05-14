@@ -16,22 +16,28 @@
 }
 
 .logo {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 10px;
-  color: #95d5b2;
-  font-family: var(--font-playfair), Georgia, serif;
-  font-size: 1.25rem;
-  letter-spacing: -0.01em;
-  font-weight: 700;
   position: relative;
   z-index: 2;
+  background: #ffffff;
+  padding: 6px 14px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.logoIcon {
-  width: 36px;
-  height: 36px;
-  flex-shrink: 0;
+.logo:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.logoImg {
+  width: auto;
+  height: 38px;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .desktopNav {
@@ -198,11 +204,11 @@
     height: 64px;
   }
   .logo {
-    font-size: 1.05rem;
+    padding: 4px 10px;
+    border-radius: 10px;
   }
-  .logoIcon {
-    width: 32px;
-    height: 32px;
+  .logoImg {
+    height: 30px;
   }
   .hamburger {
     width: 38px;

@@ -54,6 +54,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: [
+      { url: "/icon.webp", type: "image/webp", sizes: "any" },
+    ],
+    apple: [
+      { url: "/icon.webp", type: "image/webp", sizes: "180x180" },
+    ],
+    shortcut: [{ url: "/icon.webp", type: "image/webp" }],
+  },
   openGraph: {
     type: "website",
     locale: SITE.locale,
