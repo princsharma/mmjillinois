@@ -3,6 +3,7 @@ import Script from "next/script";
 import { Outfit, Playfair_Display } from "next/font/google";
 import { ANALYTICS, SITE } from "@/constants/site";
 import JsonLd from "@/components/JsonLd/JsonLd";
+import AnchorScrollFix from "@/components/AnchorScrollFix/AnchorScrollFix";
 import {
   organizationSchema,
   websiteSchema,
@@ -134,6 +135,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           />
         </noscript>
         {children}
+        <AnchorScrollFix />
         <JsonLd id="ld-organization" data={organizationSchema()} />
         <JsonLd id="ld-website" data={websiteSchema()} />
         <JsonLd id="ld-localbusiness" data={localBusinessSchema()} />
