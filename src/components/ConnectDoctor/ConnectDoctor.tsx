@@ -42,11 +42,19 @@ export default function ConnectDoctor() {
 
         <Reveal>
           <div className={styles.ctaRow}>
-            <Link href="#hero-form" className={styles.btnPrimary}>
+            <Link
+              href="#hero-form"
+              className={styles.btnPrimary}
+              title="Schedule your Medical Marijuana Card Illinois consultation"
+            >
               Schedule Consultation
               <Icon name="arrow-right" size={18} strokeWidth={2.5} />
             </Link>
-            <Link href="#how-it-works" className={styles.btnOutline}>
+            <Link
+              href="#how-it-works"
+              className={styles.btnOutline}
+              title="How to get a Medical Marijuana Card Illinois online"
+            >
               Learn More
             </Link>
           </div>

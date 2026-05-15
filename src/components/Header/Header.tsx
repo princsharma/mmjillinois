@@ -31,11 +31,13 @@ export default function Header() {
         href="#top"
         className={styles.logo}
         aria-label={`${SITE.name} home`}
+        title={`${SITE.name} — back to top`}
         onClick={close}
       >
         <Image
           src="/logo.webp"
-          alt={SITE.name}
+          alt={`${SITE.name} logo — Medical Marijuana Card Illinois online`}
+          title={`${SITE.name} logo`}
           width={520}
           height={150}
           priority
@@ -47,11 +49,17 @@ export default function Header() {
         <ul className={styles.navLinks}>
           {NAV_LINKS.map((link) => (
             <li key={link.href}>
-              <Link href={link.href}>{link.label}</Link>
+              <Link href={link.href} title={link.title}>
+                {link.label}
+              </Link>
             </li>
           ))}
           <li>
-            <Link href="#hero-form" className={styles.navCta}>
+            <Link
+              href="#hero-form"
+              className={styles.navCta}
+              title="Start your Medical Marijuana Card Illinois application"
+            >
               Get Started
             </Link>
           </li>
@@ -85,7 +93,7 @@ export default function Header() {
         <ul>
           {NAV_LINKS.map((link) => (
             <li key={link.href}>
-              <Link href={link.href} onClick={close}>
+              <Link href={link.href} title={link.title} onClick={close}>
                 {link.label}
               </Link>
             </li>
@@ -94,6 +102,7 @@ export default function Header() {
             <Link
               href="#hero-form"
               className={styles.navCta}
+              title="Start your Medical Marijuana Card Illinois application"
               onClick={close}
             >
               Get Started

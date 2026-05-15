@@ -188,7 +188,7 @@ export default function HeroForm() {
             />
             <label htmlFor="terms">
               I accept the{" "}
-              <a href="#" rel="nofollow">
+              <a href="#" rel="nofollow" title="Terms and Conditions">
                 Terms and Conditions
               </a>{" "}
               *

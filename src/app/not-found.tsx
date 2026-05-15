@@ -45,6 +45,7 @@ export default function NotFound() {
       </p>
       <Link
         href="/"
+        title="Back to the Medical Marijuana Card Illinois home page"
         style={{
           background: "linear-gradient(135deg,#52b788,#2d7a52)",
           color: "#ffffff",

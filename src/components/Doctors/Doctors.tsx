@@ -97,7 +97,11 @@ export default function Doctors() {
               </div>
             ))}
           </div>
-          <Link href="#hero-form" className={styles.btn}>
+          <Link
+            href="#hero-form"
+            className={styles.btn}
+            title="Start your Medical Marijuana Card Illinois application"
+          >
             Start Your Journey Today
             <Icon name="arrow-right" size={18} strokeWidth={2.5} />
           </Link>

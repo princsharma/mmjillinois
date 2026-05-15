@@ -51,9 +51,29 @@ export const ANALYTICS = {
 } as const;
 
 export const NAV_LINKS = [
-  { href: "#why-us", label: "Why Us" },
-  { href: "#how-it-works", label: "How It Works" },
-  { href: "#conditions", label: "Conditions" },
-  { href: "#pricing", label: "Pricing" },
-  { href: "#faq", label: "FAQ" },
+  {
+    href: "#why-us",
+    label: "Why Us",
+    title: "Why choose us for your Medical Marijuana Card Illinois",
+  },
+  {
+    href: "#how-it-works",
+    label: "How It Works",
+    title: "How to get a Medical Marijuana Card Illinois online",
+  },
+  {
+    href: "#conditions",
+    label: "Conditions",
+    title: "Qualifying conditions for Medical Marijuana Card Illinois",
+  },
+  {
+    href: "#pricing",
+    label: "Pricing",
+    title: "Medical Marijuana Card Illinois pricing",
+  },
+  {
+    href: "#faq",
+    label: "FAQ",
+    title: "Medical Marijuana Card Illinois frequently asked questions",
+  },
 ] as const;

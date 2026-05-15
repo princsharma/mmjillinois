@@ -54,7 +54,11 @@ export default function HowItWorks() {
         </ol>
       </div>
       <div className={styles.cta}>
-        <Link href="#hero-form" className={styles.btn}>
+        <Link
+          href="#hero-form"
+          className={styles.btn}
+          title="Consult an Illinois Medical Marijuana Card doctor online"
+        >
           Consult With a IL MMJ Doctor
           <Icon name="arrow-right" size={18} strokeWidth={2.5} />
         </Link>

@@ -66,6 +66,7 @@ export default function Pricing() {
                 <Link
                   href="#hero-form"
                   className={plan.popular ? styles.btnPrimary : styles.btnOutline}
+                  title={`${plan.ctaLabel} — Medical Marijuana Card Illinois`}
                 >
                   {plan.ctaLabel}
                   <Icon name="arrow-right" size={16} strokeWidth={2.5} />
