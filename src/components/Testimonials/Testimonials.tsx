@@ -20,9 +20,10 @@ export default function Testimonials() {
         <div className={styles.grid}>
           {TESTIMONIALS.map((t, idx) => (
             <Reveal key={t.name} delay={idx * 0.1}>
-              <article className={styles.card}>
+              <article className={styles.card} aria-labelledby={`testimonial-${idx}-name`}>
                 <div
                   className={styles.stars}
+                  role="img"
                   aria-label={`Rated ${t.rating} out of 5 stars`}
                 >
                   {"★".repeat(t.rating)}
@@ -34,7 +35,9 @@ export default function Testimonials() {
                     {t.initials}
                   </div>
                   <div>
-                    <div className={styles.name}>{t.name}</div>
+                    <h3 id={`testimonial-${idx}-name`} className={styles.name}>
+                      {t.name}
+                    </h3>
                     <div className={styles.loc}>
                       <Icon name="pin" size={12} strokeWidth={2} />
                       {t.location}

@@ -31,7 +31,7 @@ export default function Conditions() {
               <Icon name="shield-check" size={24} />
             </div>
             <div>
-              <h4>Not sure if you qualify?</h4>
+              <h3>Not sure if you qualify?</h3>
               <p>
                 Our licensed doctors will review your medical history during the
                 consultation and confirm your eligibility based on your specific

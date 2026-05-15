@@ -25,10 +25,14 @@ export default function Doctors() {
                 DR
               </div>
               <div className={styles.info}>
-                <h4>Dr. Rebecca S., M.D.</h4>
+                <h3>Dr. Rebecca S., M.D.</h3>
                 <p>Illinois Medical Cannabis Specialist</p>
                 <div className={styles.ratingRow}>
-                  <span className={styles.stars} aria-label="Rated 4.9 out of 5 stars">
+                  <span
+                    className={styles.stars}
+                    role="img"
+                    aria-label="Rated 4.9 out of 5 stars"
+                  >
                     ★★★★★
                   </span>
                   <span className={styles.ratingTxt}>4.9 · 850+ consultations</span>

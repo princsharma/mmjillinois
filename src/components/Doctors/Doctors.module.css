@@ -60,7 +60,7 @@
   flex-shrink: 0;
 }
 
-.info h4 {
+.info h3 {
   font-family: var(--font-playfair), Georgia, serif;
   font-size: 1.1rem;
   color: #ffffff;
