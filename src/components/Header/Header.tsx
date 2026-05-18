@@ -68,7 +68,7 @@ export default function Header() {
 
       <button
         type="button"
-        className={styles.hamburger}
+        className={`${styles.hamburger} ${open ? styles.hamburgerOpen : ""}`}
         aria-label={open ? "Close menu" : "Open menu"}
         aria-expanded={open}
         aria-controls="mobile-menu"

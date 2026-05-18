@@ -25,7 +25,6 @@ export default function AnchorScrollFix() {
 
       if (id === "top") {
         e.preventDefault();
-        e.stopPropagation();
         window.scrollTo({ top: 0, behavior: "smooth" });
         if (window.location.hash) {
           history.replaceState(null, "", window.location.pathname);
@@ -37,7 +36,6 @@ export default function AnchorScrollFix() {
       if (!el) return;
 
       e.preventDefault();
-      e.stopPropagation();
       el.scrollIntoView({ behavior: "smooth", block: "start" });
       if (window.location.hash !== href) {
         history.replaceState(null, "", href);

@@ -76,7 +76,7 @@
 .hamburger {
   display: none;
   position: relative;
-  z-index: 2;
+  z-index: 201;
   width: 42px;
   height: 42px;
   padding: 0;
@@ -95,18 +95,34 @@
   background: rgba(82, 183, 136, 0.2);
 }
 
+.hamburgerOpen {
+  background: linear-gradient(135deg, #52b788, #2d7a52);
+  border-color: transparent;
+  box-shadow: 0 4px 14px rgba(82, 183, 136, 0.4);
+}
+
+.hamburgerOpen:hover {
+  background: linear-gradient(135deg, #52b788, #2d7a52);
+}
+
 .bar {
   display: block;
-  width: 18px;
-  height: 2px;
+  width: 20px;
+  height: 2.5px;
   background: #95d5b2;
   border-radius: 2px;
-  transition: transform 0.3s ease, opacity 0.2s ease;
+  transition: transform 0.3s ease, opacity 0.2s ease, background 0.2s ease,
+    width 0.3s ease;
   transform-origin: center;
 }
 
+.hamburgerOpen .bar {
+  background: #ffffff;
+}
+
 .barOpen1 {
-  transform: translateY(7px) rotate(45deg);
+  width: 22px;
+  transform: translateY(7.5px) rotate(45deg);
 }
 
 .barOpen2 {
@@ -114,7 +130,8 @@
 }
 
 .barOpen3 {
-  transform: translateY(-7px) rotate(-45deg);
+  width: 22px;
+  transform: translateY(-7.5px) rotate(-45deg);
 }
 
 .overlay {
